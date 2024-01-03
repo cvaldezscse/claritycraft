@@ -1,0 +1,41 @@
+
+GENERAL
+- [ ] Configuration file with all possible parameters
+	- [ ] ALL
+		- [ ] Number of threads for execution
+		- [ ] Paralell execution
+		- [ ] Page Objects standard definition
+		- [ ] Data driven approach for data (API, SOAP, GraphQL and DB)
+		- [ ] Report template module (where you can choose between the Freemarker, Extent, Custom HTML, etc) with approach selector (Simple, detailed)
+		- [ ] All parameters should be given by CLI
+		- [ ] Make the project compatible with Maven
+		- [ ] Java 21
+		- [ ] Annotations management
+		- [ ] exceptions management with friendly messages
+		- [ ] All page/screen scanner and get suggested page objects (looking for buttons, links, text inputs, options selectors)
+		- [ ] 
+	- [ ] Web
+		- [ ] Webdriver selection
+		- [ ] Section for analyzing styles
+		- [ ] Cloud execution
+		- [ ] Adapter for CI/CD integration
+	- [ ] Mobile
+		- [ ] Platform selector (iOS, Android)
+		- [ ] Phone or device selector for creating it from scratch from the Android SDK or iOS emulator
+		- [ ] 
+
+
+- [ ] One repo per platform
+	- [ ] Mobile
+	- [ ] Web
+	- [ ] API
+	- [ ] Desktop
+	- [ ] Performance
+	- [ ] CLI
+	- [ ] SOAP Services
+	- [ ] Videogames
+	- [ ] GraphQL
+	- [ ] ProtoBuf
+	- [ ] SQL Table Set
+		- [ ] Stored Procedures
+		- [ ] Triggers

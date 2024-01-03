@@ -1,4 +1,8 @@
 
+Row Template:
+|[Link]()|desc|
+
+
 | Repo | Description |
 | --- | ----------- |
 |[Public Top Github Repos Everyone should look](https://github.com/sachin-source/top-github-repositories-which-everyone-should-look)|This repository contains a list of important and useful github repos which a developer, coder, a student should never miss to look at.|
@@ -13,3 +17,8 @@
 |[Every programmer should Know](https://github.com/mtdvio/every-programmer-should-know)|A collection of (mostly) technical things every software developer should know about|
 |[Public APIs Directory](https://github.com/public-apis/public-apis)|A collective list of free APIs|
 |[1000 Project Ideas to develop](https://github.com/Akshat4112/1000_Project_Ideas)|1000 Project Ideas to be coded in any language|
+|[TheAlgorithms](https://github.com/TheAlgorithms)|Open Source resource for learning Data Structures & Algorithms and their implementation in any Programming Language|
+|[Awesome Python](https://github.com/vinta/awesome-python)|A curated list of awesome Python frameworks, libraries, software and resources|
+|[app-ideas](https://github.com/florinpop17/app-ideas)|A Collection of application ideas which can be used to improve your coding skills.|
+|[awesome-cheatsheets](https://github.com/LeCoupa/awesome-cheatsheets)|Awesome cheatsheets for popular programming languages, frameworks and development tools. They include everything you should know in one single file.|
+|[project-based-learning](https://github.com/practical-tutorials/project-based-learning)|Curated list of project-based tutorials|

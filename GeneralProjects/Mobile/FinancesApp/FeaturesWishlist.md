@@ -1,0 +1,21 @@
+- [ ] Credit card accounts with due date, amount for not paying interests, minimum, interest rate, CAT
+- [ ] Incomes, Outcomes, Savings
+- [ ] Future purchases
+- [ ] Daily budget to spend
+	- [ ] If something is not spent, that would be rolled-over
+- [ ] Extra incomes
+- [ ] Number analysis
+- [ ] iCloud and google drive encrypted storage
+- [ ] Monthly budget
+- [ ] Salary raises and focus in saving the half of them
+- [ ] Transactions per day
+- [ ] Spent category
+- [ ] Recurrent income
+- [ ] Investments follow-up
+	- [ ] Crypto
+	- [ ] Stocks
+	- [ ] Self business
+	- [ ] Other
+- [ ]  Application related with personal finances with the main section of credit card, not only debit
+- [ ] This may help us to plan the whole month
+- [ ] It could generate an excel spreadsheet that has the whole report
