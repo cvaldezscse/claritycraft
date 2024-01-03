@@ -1,0 +1,3 @@
+- [ ] Database design
+- [ ] Screens design
+- [ ] Workflow design
