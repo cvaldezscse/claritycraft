@@ -1,0 +1,4 @@
+- [ ] Allow to modify the required parameters
+- [ ] Able to edit the last estimation
+- [ ] Hability to export the estimation to a formal document
+- [ ] 
