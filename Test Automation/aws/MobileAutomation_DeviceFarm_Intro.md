@@ -5,6 +5,14 @@ Overall: Here how to implement the AWS Device Farm into a Java project
 * Test application exercise: https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-built-in-fuzz.html
 * Web UI and Mobile testing: https://aws.amazon.com/products/frontend-web-mobile/
 * **Device Farm API Documentation**: https://docs.aws.amazon.com/es_es/devicefarm/latest/APIReference/API_Operations.html
+* Device Farm and Appium: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/test-types-appium.html
+* Device Farm CLI: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/amazon-linux-2-devicefarm-cli.html
+* Device Farm with Code Pipeline: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/codepipeline.html
+* Device Farm Automation: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/api-ref.html
+* Automation troubleshooting: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/troubleshooting.html
+* DF Limits: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/limits.html
+* DF Tools and Plugins: https://docs.aws.amazon.com/es_es/devicefarm/latest/developerguide/aws-device-farm-tools-plugins.html
+* 
 
 ## Steps
 1. Locate an app installation file (.apk/.ipa), for instance: 
