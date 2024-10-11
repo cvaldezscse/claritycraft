@@ -1,0 +1,41 @@
+body {
+  /*
+  background-color: red;
+  background-image: url(img/pattern1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-position: left bottom;
+  */
+  color: black;
+  text-indent: 20px;
+  /* word-spacing: 10px; */
+  /* letter-spacing: 5px; */
+}
+
+h1 {
+  line-height: 50px;
+  text-transform: capitalize;
+  text-decoration: underline;
+}
+
+#minibox1 {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: rgb(72, 90, 155);
+  color: white;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+#minibox2 {
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  background: white;
+  background-image: url(img/pattern2.webp);
+  border: 5px solid red;
+}
