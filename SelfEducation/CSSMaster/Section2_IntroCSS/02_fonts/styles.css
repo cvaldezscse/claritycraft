@@ -1,0 +1,37 @@
+/* Importa una fuente personalizada, custom font import*/
+@font-face {
+  font-family: HandjetFuenteCustom;
+  src: url(fonts/Handjet-Regular.ttf);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+
+  /* COLORES  */
+  /* Colores del sistema por defecto en el sistema ver https://www.w3schools.com/cssref/css_colors.php */
+  color: mediumpurple;
+
+  /* Colores HEX */
+  color: #6753ca;
+
+  /* Colores RGB */
+  color: rgb(255, 225, 107);
+
+  /* Colores RGBA */
+  color: rgba(255, 225, 107, 0.5);
+}
+
+h3 {
+  font-family: HandjetFuenteCustom, "Comic Sans MS";
+  font-size: 35px;
+  font-weight: lighter;
+  color: olive;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+}

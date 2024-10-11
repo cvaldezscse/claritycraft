@@ -1,0 +1,114 @@
+/* ##### SELECTORES ##### */
+/* Elemento que quiera del html  */
+
+/* Selector universal (*) aplica a todos los elementos del HTML*/
+/* Se usa para estilos generales */
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Selector de etiqueta */
+/* Selecciona todos los elementos de una lista concreta */
+h1 {
+  background: red;
+  color: white;
+  padding: 10px;
+}
+
+a {
+  font-size: 18px;
+  color: green;
+  text-decoration: none;
+}
+
+/* Selector compuesto (elementos que contengan otros como el enlace dentro del footer) */
+footer a {
+  text-decoration: none;
+  color: brown;
+}
+
+/* Selector de id (#) para elementos que no se va a repetir su nombre*/
+#description {
+  border: 1px solid;
+  padding: 15px;
+}
+
+#title {
+  background: blueviolet;
+  border: 2px dashed white;
+}
+
+/* compartiendo estilos entre selectores (Aplica para todos) */
+#title,
+#description {
+  border: 5px solid black;
+  padding: 15px;
+}
+
+/* Selector de clase (para multiples elementos que comparten la misma clase y pueden ser muchos)*/
+.paragraph {
+  font-style: italic;
+  /* text-decoration: underline; */
+  font-weight: bold;
+}
+
+.parrafo1,
+.parrafo3 {
+  background-color: blue;
+  color: white;
+}
+
+.parrafo3 {
+  background-color: orangered;
+  color: black;
+}
+
+/* Seleector de atributo (elementos del html en base a sus atributos)*/
+
+#usuario form {
+  border: 5px solid blue;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
+
+#usuario form * {
+  display: block;
+}
+
+/* Atributo tipo texto */
+input[type="text"] {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 300px;
+}
+
+input[type="submit"] {
+  background: green;
+  color: white;
+  padding: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/* Selectores hijos */
+/* elementos dentro del id menu que son links dentro de un elemento li */
+#menu > li > a {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
+/* Prioridad en css: CSS da prioridad a las reglas mas especificas*/
+#saludo h1 {
+  background: black;
+}
+
+h1 {
+  background: purple;
+}
+/* Notas
+    Siempre la ultima linea sobreescribe a lo anterior
+*/

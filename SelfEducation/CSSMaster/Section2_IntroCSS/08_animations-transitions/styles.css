@@ -1,0 +1,65 @@
+#boton {
+  display: block;
+  padding: 20px;
+  background-color: green;
+  color: white;
+  width: 200px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: 5px solid rgb(17, 40, 17);
+  /* tiempo que tarda en moverse entre estilos */
+  /* transition: all 500ms; */
+  transition: border 500ms, background 3s, border-radius 1s;
+}
+
+#boton:hover {
+  border-radius: 15px;
+  background: orangered;
+  border: 5px solid red;
+}
+
+/* animaciones son diferentes al las trancisiones puede repetirse siempre
+    estan basadas en keyframes (fotogramas)
+*/
+#caja {
+  width: 250px;
+  height: 250px;
+  background: lightseagreen;
+  color: white;
+  border: 5px solid black;
+  margin-top: 25px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 200px;
+
+  /* aplicando la animacion */
+  animation-name: desplazamiento;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* definiendo keyframes */
+@keyframes desplazamiento {
+  0% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+  50% {
+    margin-left: 1200px;
+    transform: rotate(360deg);
+    border-radius: 999px;
+  }
+  75% {
+    background: red;
+  }
+  77% {
+    border: 10px dashed blue;
+  }
+  100% {
+    margin-left: 0px;
+    transform: rotate(0deg);
+  }
+}

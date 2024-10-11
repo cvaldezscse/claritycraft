@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactanos</title>
+  </head>
+  <body>
+    <h1>Contactanos</h1>
+
+    <ul>
+      <li><a href="./page1.html">Inicio</a></li>
+      <li><a href="./page2.html">Tipos de perrito</a></li>
+      <li><a href="./contactus.html">Contacto</a></li>
+    </ul>
+    <hr />
+
+    <form action="#">
+      <p>
+        <label for="nombre">NOMBRE</label><br />
+        <input type="text" name="nombre" placeholder="Nombre" />
+      </p>
+      <p>
+        <label for="email">EMAIL</label><br />
+        <input type="text" name="email" placeholder="Email" />
+      </p>
+      <p>
+        <label for="telefono">TELEFONO</label><br />
+        <input type="tel" name="telefono" placeholder="Telefono" />
+      </p>
+      <p>
+        <label for="motivo">Asunto</label><br />
+        <select name="motivo">
+          <option value="Saludos">Muy bien hecho!</option>
+          <option value="Felicitaciones">Les felicito por todo</option>
+          <option value="Quejas">No me gusto</option>
+          <option value="Otros">otro</option>
+        </select>
+      </p>
+      <p>
+        <label for="mensaje">MENSAJE</label><br />
+        <textarea name="mensaje" rows="10" placeholder="Mensaje"></textarea>
+      </p>
+      <input type="submit" value="ENVIAR" />
+    </form>
+  </body>
+</html>

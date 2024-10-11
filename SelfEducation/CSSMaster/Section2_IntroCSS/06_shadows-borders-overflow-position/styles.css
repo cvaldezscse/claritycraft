@@ -1,0 +1,182 @@
+/* 
+    Ejercicio completo HTML + CSS
+    1. (HECHO) Crear HTML con CSS 
+    2. (HECHO) Crear estructura que tenga: 
+        - Contenedor general
+        - Cabecera
+        - Menu
+        - Barra Lateral
+        - Seccion de contenido principal
+        - Elementos dentro del contenedor principal
+        - Footer
+    3. (HECHO) Todo el contenido dentro del contenedor general con ancho de 1200px y estar centrado
+    4. (HECHO) Header debe ocupar el 100% del ancho y tener un texto grande centrado
+    5. (HECHO) Menu debe tener elementos uno al lado del otro
+    6. (HECHO) El contenido principal debe tener un ancho del 70%
+    7. (HECHO) El contenido dentro del contenedor principal debe ser una cuadricula con 4 lineas de 2 cajas
+    8. (HECHO) La barra lateral debe terner un ancho del 30%
+    9. () El footer debe tener un ancho del 100% del div que lo contiene y estar abajo de todo \
+
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#contenedorgeneral {
+  width: 1200px;
+  border: 1px solid gray;
+
+  /* Centrado */
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  background: rgb(36, 107, 124);
+  color: white;
+  text-align: center;
+  line-height: 90px;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#menu {
+  background-color: #eeeeee;
+}
+
+#menu ul li {
+  /* Opcion 1 para poner uno al lado del otro */
+  /* display: inline-block; */
+
+  display: block;
+  float: left;
+  padding: 10px;
+  border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+  color: #444;
+}
+
+#menu ul li:hover {
+  background: rgb(16, 75, 143);
+  cursor: pointer;
+}
+
+#menu ul li:hover a {
+  display: block;
+  color: white;
+}
+
+#contentmain {
+  width: 69%;
+  /* border: 1px solid green; */
+  float: left;
+}
+
+#lateralbar {
+  float: left;
+  width: 30%;
+  border: 1px solid red;
+  min-height: 500px;
+  max-height: 650px;
+  text-align: center;
+
+  /* permite ver un texto cuyo vontenido esta limitado */
+  overflow: scroll;
+}
+
+#contentmain .caja {
+  /* position por defecto es relative */
+  position: relative;
+  width: 40%;
+  height: 250px;
+  background-color: #ccc;
+  border: 1px solid gray;
+  color: white;
+  float: left;
+  margin: 20px;
+  margin-left: 40px;
+  text-align: center;
+  line-height: 200px;
+  color: #444;
+  text-transform: uppercase;
+
+  /* sombra de caja */
+  box-shadow: 5px 5px 10px gray;
+
+  border-radius: 50px 10px 4px 61px;
+}
+
+#contentmain > h1 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+  color: #444;
+
+  /* Sombra en ejeX, ejeY, difuminado, ColorSombra */
+  /* eje X negativo = Izquierda, eje X positivo = Derecha */
+  /* eje Y negagivo = Arriba, eje Y positivo = abajo */
+  text-shadow: 0px 0px 2px black;
+}
+
+#footer {
+  width: 100%;
+  height: 55px;
+  line-height: 55px;
+  background: #eee;
+  text-align: center;
+  color: #444;
+  border-top: 1px solid #ccc;
+}
+
+.sombra-interior {
+  /* Sombra interna */
+  box-shadow: 5px 5px 20px gray inset !important;
+}
+
+.librebox {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  right: 40%;
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+}
+
+.libre2 {
+  background-color: green;
+  top: 280px;
+  left: 52%;
+  z-index: 101;
+}
+
+
+.fija {
+  /* position fixed significa que acompana el scroll */
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  background-color: blue;
+
+
+  right: 40%;
+  border: 1px solid black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+}
