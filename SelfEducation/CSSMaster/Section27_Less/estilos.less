@@ -1,0 +1,76 @@
+// Instalacion: sudo npm install -g less
+// Verificar version: lessc -v
+// Comando: lessc {lessFile} {destinationCSSFile}
+
+// Variables
+@bgcolor: lightblue;
+@fuente: Arial;
+@b: body;
+
+
+@{b}{
+    background: @bgcolor;
+}
+
+h1{
+    font-family: @fuente;
+}
+
+
+// Anidacion
+.informacion{
+    ul{
+        a{
+            color: green;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+// mixins
+.sombras0(){
+    box-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 5px black;
+}
+
+
+.sombras(@size){
+    box-shadow: 0px 0px @size black;
+    text-shadow: 0px 0px @size gray;
+}
+
+
+.informacion{
+    .sombras(20px);
+}
+
+
+// Operadores
+h1{
+    font-size: 30px + 7px;
+}
+
+// Mixins condicionales
+.textonegro(@value) when (@value=true){
+    color:black;
+}
+
+h1{
+    color: blue;
+    .textonegro(false);
+}
+
+
+// Bucles
+
+.loop(@cont) when (@cont > 0) {
+    .loop(( -1));
+    height: (900px/@cont);
+}
+
+.informacion{
+    height: 900px;
+    .loop(5);
+}

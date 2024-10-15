@@ -1,0 +1,146 @@
+// Variables
+$fuente-tipica: sans-serif, Helvetica, Arial;
+$color-fondo: #ccc;
+$color-letra: red;
+$color-secundario: rgb(122, 20, 20);
+
+// Uso de variables
+body {
+  //background-color: $color-fondo;
+  background-color: white;
+}
+
+h1 {
+  font-family: $fuente-tipica;
+  color: $color-letra;
+}
+
+p {
+  color: $color-secundario;
+}
+
+// Anidacion
+.caja {
+  border: 1px solid black;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+
+  h1 {
+    color: blue;
+  }
+
+  p {
+    color: green;
+  }
+
+  .info {
+    font-size: 10px;
+
+    .author {
+      font-size: 15px;
+      color: orange;
+    }
+  }
+}
+
+// Mixins / Funciones
+@mixin crearBorder1() {
+  border: 5px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+
+@mixin crearBorder($color, $size, $shadow) {
+  border: $size solid $color;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px $shadow;
+}
+
+.caja {
+  @include crearBorder(red, 10px, black);
+}
+
+.listado {
+  @include crearBorder(green, 5px, yellow);
+}
+
+// Herencia
+%alert-normal {
+  border: 1px solid gray;
+  background: #eee;
+  color: gray;
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+// Herencia
+.alert {
+  @extend %alert-normal;
+}
+
+// Modificando Herencia
+.alert-danger {
+  @extend %alert-normal;
+  color: red;
+  border-color: red;
+}
+
+.alert-success {
+  @extend %alert-normal;
+  color: green;
+  border-color: green;
+}
+
+// Operadores
+.clearfix {
+  clear: both;
+}
+
+h1 {
+  font-size: 20px + 5px - 1px;
+}
+
+$caja: 200px;
+$wrap: 900px;
+
+.cajas {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.caja {
+  float: left;
+  width: ($caja/$wrap) * 100%;
+  margin: 10px;
+}
+
+// Condicionales - if
+$color-fondo: orange;
+h1 {
+  @if $color-fondo == #ccc {
+    color: black;
+  } @else if $color-fondo == black {
+    color: lightsalmon;
+  } @else{
+    color: pink;
+  }
+}
+
+// Bucles
+// FOR
+$i: 1;
+
+@for $i from 1 through 40 {
+    .listado ul li:nth-child(#{$i}){
+        // color: orange;
+        font-size: $i * 2px;
+    }
+}
+
+// EACH
+
+// WHILE
