@@ -1,0 +1,253 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+/* ----------------EJERCICIO COMPLETO AREAS----------------------- */
+#website-areas *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website-areas {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+
+  /* Definiendo las areas */
+  /* cabecera por 5 por el numero de template columns */
+  grid-template-areas: 
+    "cabecera cabecera cabecera cabecera cabecera"
+    "menu menu menu menu menu"
+    "lateral contenido contenido contenido contenido"
+    "pie pie pie pie pie"
+    ;
+    grid-gap: 20px;
+
+    
+
+  /* justify-content: start; */
+
+  width: 75%;
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+
+#website-areas #cabecera {
+  /* Nombrando los elementos */
+  grid-area: cabecera;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: blue;
+  color: white;
+
+}
+
+#website-areas #menu {
+  grid-area: menu;
+  background: lightblue;
+  color: black;
+
+  /* para centrar verticalmente, son 70px porque esa es la altura que tiene en el grid template rows */
+  line-height: 70px;
+}
+
+#website-areas #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+  
+}
+
+#website-areas #contenido {
+  grid-area: contenido;
+  background: #eee;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+}
+
+#website-areas #contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+#website-areas #lateral {
+  grid-area: lateral;
+  background: orange;
+  color: white;
+}
+
+#website-areas #pie-pagina {
+  grid-area: pie;
+  background: black;
+  color: white;
+}
+
+
+
+/* ----------------EJERCICIO COMPLETO CSS GRID----------------------- */
+
+#website *{
+    margin: 0px;
+    padding: 0px;
+}
+
+#website {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 150px 70px 1fr 70px;
+
+  /* justify-content: start; */
+
+  width: 75%;
+  height: 1000px;
+  margin: 0px auto;
+  border: 1px solid #ccc;
+}
+
+#website #cabecera {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: blue;
+  color: white;
+
+  grid-column: 1 / 6;
+}
+
+#website #menu {
+  background: lightblue;
+  color: black;
+  grid-column: 1 / 6;
+
+  /* para centrar verticalmente, son 70px porque esa es la altura que tiene en el grid template rows */
+  line-height: 70px;
+}
+
+#website #menu ul {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  list-style: none;
+  
+}
+
+#website #contenido {
+  background: #eee;
+  grid-column: 1 / 5;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  padding: 20px;
+}
+
+#website #contenido article {
+  background: #ccc;
+  border: 1px solid #555;
+}
+
+#website #lateral {
+  background: orange;
+  color: white;
+  grid-column: 5 / 6;
+}
+
+#website #pie-pagina {
+  background: black;
+  color: white;
+  grid-column: 1 / 6;
+}
+
+/* ------------------EJEMPLOS------------------------------------ */
+
+.layout {
+  /* 
+    width: 1200px; */
+
+  /* para hacerse responsive se le debe de dar al contenedor un porcentaje */
+  width: 80%;
+  /* min-height: 400px; */
+  height: 600px;
+  margin: 0px auto;
+
+  /* definir Grid, se le tiene que dar a cada contenedor sin excepcion */
+  display: grid;
+
+  /* Elementos por columnas (Por ejemplo 2 columnas) */
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* Mismo que linea 13 */
+  /* grid-template-columns: repeat(4, calc(25% - 10px)); */
+  /* grid-template-columns: repeat(2, calc(25% - 10px)) 15% 35%; */
+
+  /* Unidades de fraccion nfr */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* grid-template-rows: 50% 10% 35%; */
+  grid-template-rows: repeat(2, 2fr) 3fr 1fr;
+
+  /* dar espacio o Margen entre todos los elementos */
+  grid-gap: 10px;
+  padding: 20px;
+  border: 3px solid orangered;
+}
+
+.layout .caja {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  /* margin: 10px; */
+  background: gray;
+}
+
+.layout .red {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  background: red;
+}
+
+.layout .blue {
+  background: blue;
+  grid-column: 2 / 4;
+}
+
+.layout .green {
+  background: green;
+  /* grid-row-start: 2; */
+  /* grid-row-end: 4; */
+  grid-row: 2 / 6;
+}
+
+.layout .pink {
+  background: palevioletred;
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+}
+
+.layout .orange {
+  background: orange;
+  grid-row: 3 / 5;
+}
+
+.layout .lightblue {
+  /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+  /* atajo para linea 71 y 72 */
+  grid-column: 2 / 4;
+
+  background: lightblue;
+}
