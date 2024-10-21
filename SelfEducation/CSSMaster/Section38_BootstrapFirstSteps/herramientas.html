@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Herramientas Bootstrap - Master en CSS</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="styles-tools.css" />
+  </head>
+  <body>
+    <div class="container" style="height: 500px">
+      <h1>Herramientas Disponibles en Bootstrap 4</h1>
+      <hr />
+
+      <!-- 001_ Altura y anchura -->
+      <!-- <div class="caja w-25 h-25">
+        Esto es una caja
+      </div> -->
+
+      <!-- Bordes color, redondeo rounded-{side},  
+       border +
+       border-{color}
+       rounded-side
+       rounded-0 (ningun lado)
+      -->
+      <!-- <div class="caja w-25 h-25 border border-success rounded-0">
+        Esto es una caja
+      </div> -->
+
+      <!-- Floats -->
+      <!-- Se usa el float como en el css de toda la vida, con sus inconvenientes como el h2 al final donde para ponerlo se debe poner un div con la clase clearfix de bootstrapde clear:both -->
+      <!-- float-{direction} -->
+      <!-- <div class="float-left float-sm-none float-md-left caja w-25 h-25 border border-success rounded-0">
+        Esto es una caja 1
+      </div>
+      <div class="float-left caja w-25 h-25 border border-primary rounded-0">
+        Esto es una caja 2
+      </div>
+      <div class="float-left caja w-25 h-25 border border-dark rounded-0">
+        Esto es una caja 3
+      </div>
+      <div class="clearfix"></div>
+      <hr/>
+      <h2>Esto es el fin del contenedor</h2> -->
+
+      <!-- COLORES DE FONDO Y TEXTO -->
+      <!-- bg-{colorBootstrap} -->
+      <!-- text-{colorBootstrap} -->
+      <!-- <div class="text-white bg-primary float-left float-sm-none float-md-left caja w-25 h-25 border border-success rounded-0">
+        Esto es una caja 1
+      </div>
+      <div class="text-white bg-danger float-left caja w-25 h-25 border border-primary rounded-0">
+        Esto es una caja 2
+      </div>
+      <div class="text-info bg-warning float-left caja w-25 h-25 border border-dark rounded-0">
+        Esto es una caja 3
+      </div>
+      <div class="clearfix"></div>
+      <hr/>
+      <h2>Esto es el fin del contenedor</h2> -->
+
+      <!-- MARGENES Y PADDINGS -->
+      <!-- m-{number 0,1(4px),2(8px),3,4,5,auto...} 
+            mt > Margin Top
+            mb > Margin Bottom
+            ml > Margin left
+            mr  > Margin right
+            mx > Margenes laterales
+            my > Margenes verticales
+
+            mt-n > margin top negativo
+       -->
+      <!-- <div
+        class="m-2 p-3 text-white bg-primary float-left float-sm-none float-md-left caja w-25 h-25 border border-success rounded-0"
+      >
+        Esto es una caja 1
+      </div>
+      <div
+        class="m-2 p-3 text-white bg-danger float-left caja w-25 h-25 border border-primary rounded-0"
+      >
+        Esto es una caja 2
+      </div>
+      <div
+        class="m-2 p-3 text-info bg-warning float-left caja w-25 h-25 border border-dark rounded-0"
+      >
+        Esto es una caja 3
+      </div>
+
+      <div class="clearfix"></div> -->
+      <!-- margin: 0 auto == mx-auto -->
+      <!-- <div
+        class="mx-auto m-2 p-3 text-light bg-success caja w-25 h-25 border border-dark rounded-0"
+      >
+        Esto es una caja 4
+      </div> -->
+
+      <!-- SOMBRAS -->
+      <!-- shadow-{tamanoBootstrap o none} -->
+      <!-- <div
+        class="shadow-lg mx-auto m-2 p-3 text-light bg-success caja w-25 h-25 border border-dark rounded-0"
+      >
+        Esto es una caja 4
+      </div> -->
+
+      <!-- Ocultar/Mostrar elementos -->
+       <!-- invisible/visible -->
+      <div
+        class="visible shadow-lg mx-auto m-2 p-3 text-light bg-success caja w-25 h-25 border border-dark rounded-0"
+      >
+        Esto es una caja 4
+      </div>
+
+
+
+
+      <div class="clearfix"></div>
+      <hr />
+      <h2>Esto es el fin del contenedor</h2>
+      <hr>
+
+      <!-- TEXTOS -->
+       <!-- tamano de texto -> display-{tamanoTexto} -->
+       <!-- estilo de texto -> font-weight-{style: bold,light,italic} -->
+        <!-- text-{center,right,left,uppercase,lowercase, etc} -->
+         <!-- Para mas ir a utilidades bootstrap 4 o version -->
+      <p class="display-2 font-weight-italic text-center text-uppercase">Esto es un texto</p>
+
+
+      <!-- USO DE CODIGO VISIBLE EN BOOTSTRAP -->
+      <!-- Codigo resaltado -->
+      <code>
+        https://google.com
+      </code>
+
+      <code>
+        <pre>
+          if(variable == true){
+            return;
+          } else {
+            i++;
+          }
+        </pre>
+      </code>
+
+
+      <!-- RESALTANDO ATAJOS DE TECLADO -->
+      <kbd>Control + D </kbd> para volver al escritorio
+
+
+    </div>
+
+    <script type="text/javascript" src="jquery/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
